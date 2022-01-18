@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite With Listener">
+
+<listeners>                                                         <!-- TO INTRODUCE THE LISTENER IN THE XML THESE ARE THE STEPS -->
+
+<listener class-name="testngdisscussion.TestNGListeners"></listener>
+
+</listeners>
+
+  <test thread-count="5" name="Listener Practice Test">
+    <classes>
+      <class name="testngdisscussion.ListenerTest2"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

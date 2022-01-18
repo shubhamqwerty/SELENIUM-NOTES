@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="10" name="Test" parallel="methods"> 
+  
+<!--   by writing parallel=methods every method in the class will be executed parallely -->
+
+    <classes>
+    
+    <!-- here method from both the classes will be executed parallely -->
+    
+      <class name="testngdisscussion.ParallelTestCaseExecution"/>
+       <class name="testngdisscussion.ParallelTestCaseExecution2"/>
+       
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,27 @@
+package pages;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+public abstract class BaseClass  //declared abstract sice there is no method implemented in the class we only have constructer
+{
+	
+	
+	Properties prop;
+	FileInputStream fis;
+	
+	public BaseClass() throws IOException
+	{
+ prop = new Properties();
+		
+		String filepath = System.getProperty("user.dir") +"\\config.properties";
+		
+		fis = new FileInputStream(filepath);
+		
+		prop.load(fis);
+		
+	}
+
+}

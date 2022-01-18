@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<!-- to rum the classes parallel we have to write parallel="classes"" -->
+
+  <test thread-count="10" name="Test" parallel="classes">
+    <classes>
+      <class name="testngdisscussion.ParallelTestCLASS1Execution"/>
+         <class name="testngdisscussion.ParallelTestCLASS2Execution"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

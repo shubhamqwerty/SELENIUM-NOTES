@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testngdisscussion.InclusionAndExclusionTestCases">        <!-- here we eliminated the  "/" and close the class in the next line by writing "</class>"  -->
+      
+      <methods>
+      
+      <include name="home"></include>  <!--  here only "home" will run of the class since due to include-->
+      
+<!--       <exclude name="profile"></exclude> -->
+      
+      </methods>
+      
+      
+      
+      
+      
+      </class>
+      
+<!--        <class name="testngdisscussion.AnnotationActualUsage"/>  here all methods will be executed of the class     -->
+      
+      
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
